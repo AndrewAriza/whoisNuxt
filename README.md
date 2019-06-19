@@ -1,6 +1,4 @@
-# whoisNuxt
-
-> Truora Challenge
+![Truora.com](https://uploads-ssl.webflow.com/5b559a554de48fbcb01fd277/5c795ecf39d1ad4c3d1d24c5_logo-color.png)
 
 ## Build Setup
 
