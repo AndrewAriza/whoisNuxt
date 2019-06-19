@@ -3,10 +3,11 @@
     border-variant="success"
     header-bg-variant="success"
     header-text-variant="white"
-    align="center"
-    :header="domain"
+    :header="domain | capitalize"
   >
-    <b-card-text>{{ info | pretty }}</b-card-text>
+    <b-card-text>
+      <pre>{{ info | pretty }}</pre>
+    </b-card-text>
   </b-card>
 </template>
 
@@ -15,6 +16,9 @@ export default {
   filters: {
     pretty: value => {
       return JSON.stringify(value, null, 2)
+    },
+    capitalize: text => {
+      return text.charAt(0).toUpperCase() + text.slice(1)
     }
   },
   props: {
@@ -31,3 +35,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.card-header {
+  text-align: center;
+}
+</style>

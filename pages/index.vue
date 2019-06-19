@@ -14,7 +14,7 @@
       </h2>
     </b-row>
     <b-row align-h="center">
-      <b-col cols="8">
+      <b-col cols="9">
         <b-input-group>
           <b-form-input
             id="input-live"
@@ -47,10 +47,10 @@
       </b-col>
     </b-row>
     <b-row class="panel">
-      <b-col>
+      <b-col sm="7">
         <info v-if="info" :domain="domain" :info="info" />
       </b-col>
-      <b-col>
+      <b-col sm="5">
         <record v-if="records" :domain="domain" :records="records.items" />
       </b-col>
     </b-row>
